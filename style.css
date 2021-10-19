@@ -1,0 +1,23 @@
+.navegacion li{
+    display: inline;
+    width: 50px;
+    padding: 10px;
+    border: solid black 2px;
+}
+body{
+    display: grid;
+    grid-template-columns: 100px 800px 100px;
+    grid-template-rows: auto auto;
+    grid-template-areas:"navegacion navegacion navegacion"
+                        ". contenido .";
+}
+#barradenavegacion{grid-area: navegacion;}
+#contenido{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: auto;
+    grid-template-areas: "texto imagen";
+}
+#texto{grid-area: texto;}
+#imagen{grid-area: imagen;}
